@@ -87,3 +87,162 @@ body {
 .menu li {
     padding-left: 0 !important;
 }
+
+.playlists {
+    font-weight: 400 !important;
+}
+.playlists ul li a span {
+    left: 0px;
+}
+
+.current-song-cover {
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    left: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - var(--footer-h));
+}
+
+.rightside {
+    width: 100%;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #434343;
+}
+
+.playlist-arrows {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-container {
+    margin-right: 15px !important;
+}
+
+.playlist-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playlist-header {
+    padding: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(119,119,119,1) 100%);
+}
+
+.playlist-top-email {
+    display: flex;
+    align-items: center;
+    background-color: #434343;
+    border-radius: 20px;
+    color: white;
+}
+.playlist-top-email span {
+    padding: 0 10px;
+}
+
+.playlist-header .arrow-container {
+    margin: 0 10px;
+    background-color: #535353;
+}
+
+.playlist-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.playlist-cover img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+}
+
+.playlist-info {
+    padding-left: 20px;
+    /*color: white; */
+}
+
+.album-public {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "AvenirLTStd-Black";
+}
+
+.album-title {
+    font-size: 86px;
+    font-weight: 1000;
+    margin-top: 10px;
+    font-family: "AvenirLTStd-Black";
+}
+
+.album-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #B5B5B5;
+}
+
+.album-stats  img {
+    position: relative;
+    top: 6px;
+}
+
+.album-stats span:first-of-type {
+    font-weight: 1000;
+    font-family: "AvenirLTStd-Black";
+}
+
+.playlist-buttons-left, .playlist-buttons-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playlist-buttons-resume-pause {
+    display: flex;
+    width: 54px;
+    height: 54px;
+    background-color: var(--spotify-green);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center; 
+}
+
+.playlist-buttons-like svg path {
+    fill: var(--spotify-green);
+}
+
+.playlist-buttons-like {
+    margin-left: 20px;
+}
+
+.album-songs-container {
+    height: 1000px;
+    padding: 20px;
+    background: rgb(95,95,95);
+    background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, rgba(18,18,18,1) 100%);
+}
+
+.playlist-buttons-download, .playlist-buttons-three-dot {
+    margin-left: 20px;
+}
+
+.playlist-buttons-download svg path, .playlist-buttons-three-dot svg path, .playlist-buttons-search svg path {
+    fill: #CACACA;
+}
