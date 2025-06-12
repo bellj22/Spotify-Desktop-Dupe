@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="leftside">
-            <div style ="height:20px;"></div>
+            <div style ="height:20px"></div>
             <div class="menu">
                 <ul>
                     <li>
@@ -47,7 +47,7 @@
             </div>
             <hr width="100%">
 
-            <div style="height:20px;"></div>
+            <div style="height: 20px;"></div>
             <div class="menu playlists">
                 <!-- estimated 20;-->
                 <ul>
@@ -127,13 +127,15 @@
                         </a>
                     </li>
                 </ul>
+                
             </div>
 
             <div class="current-song-cover">
                 <img src="images/song-cover.png" alt="">
             </div>
 
-        </div>
+        </div> <!--end of leftside-->
+        
         <div class="rightside">
             <div class="playlist-header">
                 <div class="playlist-top">
@@ -145,91 +147,208 @@
                             <img src="assets/RightArrow.svg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="playlist-top-email">
-                    <div class="arrow-container">
-                        <img src="assets/Profile.svg" a;t="">
-                    </div>
-                    <span>Jade Arianna...</span>
-                </div>
-            </div>
-            <div class="playlist-content">
-                <div class="playlist-cover">
-                    <img src="images/playlist-cover.png" alt="">
-                </div>
-                <div class="playlist-info">
-                    <div class="album-public">Album</div>
-                    <div class="album-title">Fall In Love With Her</div>
-                    <div class="album-description">Hopefully you listen to Sabrina's new album and fall in love with her!</div>
-                    <div style="height: 10px;"></div>
-                    <div class="album-stats">
-                        <img src="assets/newlogo.svg" width="24px" height="24px" alt="">
-                        <span> Sabrina Claudio •</span>
-                        <span> 2025 •</span>
-                        <span>11 songs, 39 min 59 sec</span>
+                    <div class="playlist-top-email">
+                        <div class="arrow-container">
+                            <img src="assets/Profile.svg" a;t="">
+                        </div>
+                        <span>Jade Arianna...</span>
                     </div>
                 </div>
-            </div>
+                <div class="playlist-content">
+                    <div class="playlist-cover">
+                        <img src="images/playlist-cover.png" alt="">
+                    </div>
+                    <div class="playlist-info">
+                        <div class="album-public">Album</div>
+                        <div class="album-title">Fall In Love With Her</div>
+                        <div class="album-description">Hopefully you listen to Sabrina's new album and fall in love with her!</div>
+                        <div style="height: 10px;"></div>
+                        <div class="album-stats">
+                            <img src="assets/newlogo.svg" width="24px" height="24px" alt="">
+                            <span> Sabrina Claudio •</span>
+                            <span> 2025 •</span>
+                            <span>11 songs, 39 min 59 sec</span>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <div class="album-songs-container">
+                <div class="playlist-buttons">
+                    <div class="playlist-buttons-left">
+                        <div class="playlist-buttons-resume-pause">
+                            <img src="assets/Pause.svg" alt="">
+                        </div>
+                        <div class="playlist-buttons-like">
+                            <img src="assets/FiiledLike.svg" alt="">
+                        </div>
+                        <div class="playlist-buttons-download">
+                            <img src="assets/Download.svg" alt="">
+                        </div>
+                        <div class="playlist-buttons-three-dot">
+                            <img src="assets/ThreeDots.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="playlist-buttons-right">
+                        <div class="playlist-buttons-search">
+                            <img src="assets/Search.svg" alt="">
+                        </div>
+                        <div class="playlist-buttons-order">
+                            List Order
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-songs">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Album</th>
+                            <th>Date Added</th>
+                            <th>
+                                <img src="assets/Duration.svg" alt="">
+                            </th>
+                        </tr>
+                        <!--song 1 FILWH 4:05-->
+                        <tr>
+                            <td>1</td>
+                            <td class="song-title">
+                                <div class="song-img">
+                                    <img src="images/song-cover.png" alt="">
+                                </div>
+                                <div class="song-name-album">
+                                    <div class="song-name">Fall In Love With Her</div>
+                                    <div class="song-artist">Sabrina Claudio, Tanerélle</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Fall In Love With Her</td>
+                            <td class="song-date-added">June 6, 2025</td>
+                            <td class="song-duration">
+                                4:05
+                            </td>
+                        </tr>
+
+                        <!--song 2 NYTNM 2:47-->
+                        <tr>
+                            <td>2</td>
+                            <td class="song-title">
+                                <div class="song-img">
+                                    <img src="images/song-cover.png" alt="">
+                                </div>
+                                <div class="song-name-album">
+                                    <div class="song-name">Need U To Need Me</div>
+                                    <div class="song-artist">Sabrina Claudio</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Fall In Love With Her</td>
+                            <td class="song-date-added">June 6, 2025</td>
+                            <td class="song-duration">
+                                2:47
+                            </td>
+                        </tr>
+
+                        <!--song 3 -->
+                        <tr>
+                            <td>3</td>
+                            <td class="song-title">
+                                <div class="song-img">
+                                    <img src="images/song-cover.png" alt="">
+                                </div>
+                                <div class="song-name-album">
+                                    <div class="song-name">Sail</div>
+                                    <div class="song-artist">Sabrina Claudio</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Fall In Love With Her</td>
+                            <td class="song-date-added">June 6, 2025</td>
+                            <td class="song-duration">
+                                3:20
+                            </td>
+                        </tr>
+
+                        <!--song 4 -->
+                        <tr>
+                            <td>4</td>
+                            <td class="song-title">
+                                <div class="song-img">
+                                    <img src="images/song-cover.png" alt="">
+                                </div>
+                                <div class="song-name-album">
+                                    <div class="song-name">Before It's Too Late</div>
+                                    <div class="song-artist">Sabrina Claudio</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Fall In Love With Her</td>
+                            <td class="song-date-added">June 6, 2025</td>
+                            <td class="song-duration">
+                                4:00
+                            </td>
+                        </tr>
+
+                        <!--song 5 -->
+                        <tr>
+                            <td>5</td>
+                            <td class="song-title">
+                                <div class="song-img">
+                                    <img src="images/song-cover.png" alt="">
+                                </div>
+                                <div class="song-name-album">
+                                    <div class="song-name">Mi Luz</div>
+                                    <div class="song-artist">Sabrina Claudio</div>
+                                </div>
+                            </td>
+                            <td class="song-album">Fall In Love With Her</td>
+                            <td class="song-date-added">June 6, 2025</td>
+                            <td class="song-duration">
+                                3:24
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="album-songs-container">
-            <div class="playlist-buttons">
-                <div class="playlist-buttons-left">
-                    <div class="playlist-buttons-resume-pause">
-                        <img src="assets/Pause.svg" alt="">
-                    </div>
-                    <div class="playlist-buttons-like">
-                        <img src="assets/FiiledLike.svg" alt="">
-                    </div>
-                    <div class="playlist-buttons-download">
-                        <img src="assets/Download.svg" alt="">
-                    </div>
-                    <div class="playlist-buttons-three-dot">
-                        <img src="assets/ThreeDots.svg" alt="">
-                    </div>
-                </div>
-                <div class="playlist-buttons-right">
-                    <div class="playlist-buttons-search">
-                        <img src="assets/Search.svg" alt="">
-                    </div>
-                    <div class="playlist-buttons-order">
-                        List Order
-                    </div>
-                </div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer-player">
+        <div class="footer-player-left">
+            <div class="footer-player-left-song">
+                <div class="footer-player-left-song-name">Fall In Love With Her</div>
+                <div class="footer-player-left-song-artist">Sabrina Claudio</div>
             </div>
-            <div class="playlist-songs">
-                <table>
-                    <tr>
-                        <th>#</th>
-                        <th>Title</th>
-                        <th>Album</th>
-                        <th>Date Added</th>
-                        <th>
-                            <img src="assets/Duration.svg" alt="">
-                        </th>
-                    </tr>
-                    <!--song 1 FILWH 4:05-->
-                    <tr>
-                        <td>1</td>
-                        <td class="song-title">
-                            <div class="song-img">
-                                <img src="images/song-cover.png" alt="">
-                            </div>
-                            <div class="song-name-album">
-                                <div class="song-name">Fall In Love With Her</div>
-                                <div class="song-artist">Sabrina Claudio, Tanerélle</div>
-                            </div>
-                        </td>
-                        <td class="song-album">Fall In Love With Her</td>
-                        <td class="song-date-added">June 6, 2025</td>
-                        <td class="song-duration">
-                            4:05
-                        </td>
-                    </tr>
+            <div class="footer-player-left-like">
+                <img src="assets/FiiledLike.svg" alt="" class="spotify-color" style="height: 18px; width: 18px;">
+            </div>
+        </div>
 
-                    <!--song 2 NYTNM 2:47-->
-                    
-                </table>
+        <div class="footer-player-middle">
+            <div class="footer-player-middle-buttons">
+                <img src="assets/Shuffle.svg" alt="" class="gray-filtered">
+                <img src="assets/Previous.svg" alt="" class="gray-filtered">
+                <span class="pause-button">
+                    <img src="assets/Pause.svg" alt="">
+                </span>
+                <img src="assets/Next.svg" alt="" class="gray-filtered">
+                <img src="assets/Repeat.svg" alt="" class="gray-filtered">
+            </div>
+            <div class="footer-player-middle-slider">
+                <div class="player-time">2:12</div>
+                <div class="player-slider">
+                    <input type="range" min="1" max="100" value="30">
+                </div>
+                <div class="player-time">4:21</div>
+            </div>
+        </div>
+
+        <div class="footer-player-right">
+            <div class="footer-player-right-buttons">
+                <img src="assets/Lyrics.svg" alt="">
+                <img src="assets/Queue.svg" class="filtered-img" alt="">
+                <img src="assets/Connect to a device.svg" class="filtered-img" alt="">
+                <img src="assets/Volume.svg" class="filtered-img" alt="">
+                <div class="player-slider" style="margin-right: 20px; width: 200px;">
+                    <input type="range" min="1" max="100" value="30" style="width:75px; position: relative; top:-5px;">
+                </div>
+                <img src="assets/Full screen.svg" class="filtered-img" alt="">
             </div>
         </div>
     </div>

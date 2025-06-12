@@ -58,6 +58,9 @@ body {
     width: 24px;
 }
 
+.menu ul li {
+    padding: 5px;
+}
 .menu ul li a {
     text-decoration: none;
     color: gray;
@@ -101,6 +104,7 @@ body {
     bottom: 40px;
     left: 0;
 }
+
 
 .container {
     display: flex;
@@ -175,27 +179,27 @@ body {
 
 .playlist-info {
     padding-left: 20px;
-    /*color: white; */
+    color: white; 
 }
 
 .album-public {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
-    font-family: "AvenirLTStd-Black";
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .album-title {
     font-size: 86px;
-    font-weight: 1000;
+    font-weight: 700;
     margin-top: 10px;
-    font-family: "AvenirLTStd-Black";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .album-description {
     font-size: 16px;
     font-weight: 400;
     margin-top: 20px;
-    color: #B5B5B5;
+    color: #d9d2d2;
 }
 
 .album-stats  img {
@@ -204,8 +208,8 @@ body {
 }
 
 .album-stats span:first-of-type {
-    font-weight: 1000;
-    font-family: "AvenirLTStd-Black";
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .playlist-buttons-left, .playlist-buttons-right {
@@ -245,4 +249,166 @@ body {
 
 .playlist-buttons-download svg path, .playlist-buttons-three-dot svg path, .playlist-buttons-search svg path {
     fill: #CACACA;
+}
+
+.playlist-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-buttons-order {
+    padding: 10px;
+    color: #CACACA;
+}
+
+.playlist-songs {
+    margin-top: 20px;
+}
+.playlist-songs table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.playlist-songs table tr td, .playlist-songs table tr th {
+    padding: 10px;
+    color: #CACACA;
+}
+.playlist-songs table tr th {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.playlist-songs table tr:first-of-type {
+    border-bottom: 1px solid #4C4C4C;
+}
+.playlist-songs table th {
+    text-align: left;
+}
+.playlist-songs table tr th:first-child{
+    width: 2%;
+}
+
+.playlist-songs table tr th:nth-child(2) {
+    width: 40%;
+}
+
+.song-img img {
+    width: 36px;
+    height: 36px;
+}
+
+.song-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.song-name-album {
+    padding-left: 15px;
+    letter-spacing: 0.5px;
+}
+
+.song-name, .footer-player-left-song-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.song-artist, .song-album, .song-date-added, .footer-player-left-song-artist, .player-time, .song-duration {
+    font-size: 12px;
+    margin-top: 6px;
+    color: #898989 !important;
+}
+
+.footer-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    background-color: #181818;
+    width: 100%;
+    height: var(--footer-h);
+}
+.footer-player-left-like svg path {
+    fill: var(--spotify-green);
+}
+.footer-player-left-like {
+    padding-left: 30px;
+}
+.footer-player-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-player-middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-player-middle-buttons, .footer-player-middle-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-player-middle-buttons img {
+    width: 15px;
+    padding: 15px;
+}
+
+.pause-button {
+    position: relative;
+    display: inline-block;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50%;
+    margin: 0 8px;
+    top: 4px;
+    background-color: var(--spotify-green) !important;
+}
+
+.pause-button img {
+    position: relative;
+    max-width: 24px !important;
+    max-height: 24px !important;
+    filter: none !important;
+    left: -4px;
+    top: -4px;
+}
+
+.player-slider {
+    width: 50% !important;
+}
+
+.player-slider input {
+    width: 100%;
+    height: 5px;
+    background-color: #6a6a6a;
+    border-radius: 5px;
+    position: relative;
+    border: none;
+}
+
+.footer-player-middle-slider {
+    display: flex;
+    align-items: center;
+}
+
+.footer-player-right-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.player-time {
+    padding: 0 10px;
+}
+
+
+.footer-player-right-buttons img {
+    margin-right: 20px;
+    width: 16px;
 }
